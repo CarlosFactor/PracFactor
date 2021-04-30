@@ -10,7 +10,7 @@ class RecordReservationLine(models.Model):
 
     name_reservation_line = fields.Char("Description", required=True,related="record.title")
     record = fields.Many2one("record.record", "Record")
-    artist_id = fields.Many2one("record.artist", "Artist")
+    # artist_id = fields.Many2one("record.artist", "Artist")
     price = fields.Float("Price Record", related="record.price")
     reservation_unit = fields.Integer("Reserved Units", default = "1")
     client = fields.Many2one("res.partner", "Client")
