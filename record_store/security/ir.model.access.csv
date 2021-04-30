@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_record_artist_user,access.record.artist.user,model_record_artist,store_user_group,1,0,0,0
+access_record_artist_manager,access.record.artist.manager,model_record_artist,store_manager_group,1,1,1,1
+access_record_musical_genre_user,access.record.musical.genre.user,model_record_musical_genre,store_user_group,1,0,0,0
+access_record_musical_genre_manager,access.record.musical.genre.manager,model_record_musical_genre,store_manager_group,1,1,1,1
+access_record_record_user,access.record.record.user,model_record_record,store_user_group,1,0,0,0
+access_record_record_manager,access.record.record.manager,model_record_record,store_manager_group,1,1,1,1
+access_record_song_user,access.record.song.user,model_record_song,store_user_group,1,0,0,0
+access_record_song_manager,access.record.song.manager,model_record_song,store_manager_group,1,1,1,1
+access_record_reservation_user,access.record.reservation.user,model_record_reservation,store_user_group,1,0,0,0
+access_record_reservation_manager,access.record.reservation.manager,model_record_reservation,store_manager_group,1,1,1,1
+access_record_reservation_line_user,access.record.reservation.line.user,model_record_reservation_line,store_user_group,1,0,0,0
+access_record_reservation_line_manager,access.record.reservation.line.manager,model_record_reservation_line,store_manager_group,1,1,1,1

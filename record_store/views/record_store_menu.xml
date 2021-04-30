@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- Creamos el menu para que nos muestre el modulo -->
+<!-- © 2021 Carlos del Valle <carlos.delvalle@factorlibre.com>
+    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+
+<odoo>
+    <data>
+    <!-- Con esto le damos un id, un nombre visible la secuencia y le metemos un grupo base de usuario, le estamos diciendo que este menu solo lo vera
+            la gente del grupo que indiquemos-->
+        <menuitem id="record_store" name="Record store" sequence="16"
+            groups="base.group_user"/>
+    </data>
+</odoo>

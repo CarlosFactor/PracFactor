@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- Creamos el menu para que nos muestre el modulo -->
+<!-- © 2021 Carlos del Valle <carlos.delvalle@factorlibre.com>
+    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+    
+<odoo>
+    <record id="record_model_form_view" model="ir.ui.view">
+    <field name="name">record.record.form</field>
+    <field name="model">record.record</field> <!--El model hacer referencia a la clase-->
+    <field name="arch" type="xml">
+        <form string="Record">
+            <sheet>
+                <field name="image" widget="image" class="oe_left oe_avatar" nolabel="1" options="{&quot;size&quot;: [130,130]}"/>
+                <div class="oe_title">
+                    <h1>
+                        <field name="title" nolabel="1"/>
+                    </h1>
+                </div>
+                <group>
+                    <field name="artist_ids"/>
+                    <field name="date"/>
+                    <field name="price"/>
+                </group>
+            </sheet>
+        </form>
+        </field>
+    </record>
+
+    <record id="record_model_tree_view" model="ir.ui.view">
+        <field name="name">record.record.tree</field>
+        <field name="model">record.record</field>
+        <field name="arch" type="xml">
+            <tree string="Record">
+                <field name="title"/>
+                <field name="date"/>
+                <field name="price"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="record_model_action" model="ir.actions.act_window">
+        <field name="name">Record</field>
+        <field name="res_model">record.record</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="view_type">form</field> -->
+        <field name="view_id" ref="record_model_tree_view"/>
+    </record>
+
+    <!-- Submenu -->
+    <menuitem id="record_parent_menu" name="Record" parent="record_store.record_store" />
+    <!-- Submenu del submenu -->
+    <menuitem id="record_menu" parent="record_parent_menu" action="record_model_action" />
+</odoo>
