@@ -13,10 +13,11 @@ class RecordReservation(models.Model):
         return self.env.user
 
     name_reservation = fields.Char("Name Reservation", default="/")
-    client = fields.Many2one("res.partner", "Client", store=True)
-    reservation_date = fields.Datetime("Reservation Date")
+    client= fields.Many2one("res.partner", "Client", store=True)
+    reservation_date= fields.Datetime("Reservation Date")
     reservation_line_ids = fields.Many2many("record.reservation.line", string= "Reservation line")
-    
+    user_id = fields.Many2one("res.users", "Employee", default=_get_default_user)
+
     state = fields.Selection(
         [
             ("draft","Draft"),
@@ -35,12 +36,4 @@ class RecordReservation(models.Model):
         for record in self:
             for line in record.reservation_line_ids:
                 total += line.total_price
-            # record.total_reservation = total
-        record.total_reservation = total
-
-
-
-    user_id = fields.Many2one(
-        "res.users", "Employee", default=_get_default_user
-    )
-
+            record.total_reservation = total
