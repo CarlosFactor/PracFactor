@@ -6,7 +6,7 @@ from odoo import fields, models                     # Importamos los campos y lo
 # Creamos la clase Cancion 
 class RecordSong(models.Model):                   
     _name = 'record.song'      
-
+    _description = "Song"
 
     name = fields.Char("Name", required=True)
     artist_ids = fields.Many2many("record.artist", string="Artist_ids")

@@ -4,7 +4,6 @@
     "name": "Record Store",
     "depends": [
         'base',
-        'sale_management',
     ],
     "version": "14.0.1.0.0",
     "author": "FactorLibre",
@@ -18,7 +17,8 @@
         'views/musical_gender_view.xml',
         'views/record_record_view.xml',
         'views/record_song_view.xml',
-        'views/record_reservation_view.xml'
+        'views/record_reservation_view.xml',
+        'data/reservation_sequence.xml',
     ],
     "category": ""
 }

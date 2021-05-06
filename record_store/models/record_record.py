@@ -5,7 +5,8 @@ from odoo import fields, models                     # Importamos los campos y lo
 
 # Creamos la clase Disco 
 class RecordRecord(models.Model):                   
-    _name = 'record.record'      
+    _name = 'record.record'  
+    _description = "Record"    
     _rec_name = "title"     
 
 

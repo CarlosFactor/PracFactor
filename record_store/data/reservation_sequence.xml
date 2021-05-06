@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- © 2021 Carlos del Valle <carlos.delvalle@factorlibre.com>
+    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+    <odoo noupdate="1">
+        <record id="sequence_self_service" model="ir.sequence">
+            <field name="name">Reservation</field>
+            <field name="code">record.reservation</field>
+            <field name="active">TRUE</field>
+            <field name="prefix">RS</field>
+            <field name="padding">6</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+    </odoo>

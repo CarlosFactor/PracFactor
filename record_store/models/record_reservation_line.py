@@ -5,15 +5,14 @@ from odoo import api, fields, models, _                     # Importamos los cam
 
 # Creamos la clase Cancion 
 class RecordReservationLine(models.Model):                   
-    _name = 'record.reservation.line'      
+    _name = 'record.reservation.line'  
+    _description = "ReservationLine"    
     _rec_name = "name_reservation_line"
 
     name_reservation_line = fields.Char("Description", required=True,related="record.title")
     record = fields.Many2one("record.record", "Record")
-    # artist_id = fields.Many2one("record.artist", "Artist")
     price = fields.Float("Price Record", related="record.price")
     reservation_unit = fields.Integer("Reserved Units", default = "1")
-    client = fields.Many2one("res.partner", "Client")
     total_price = fields.Float("Total Price", compute="_compute_total_reservation")
 
     @api.onchange("reservation_unit")

@@ -16,15 +16,13 @@
                             <field name="name" nolabel="1"/>
                         </h1>
                         <group>
-                            <group>
-                                <field name="description" nolabel="1"/>
-                            </group>
-                            <group>
-                                <!-- <field name="genre_ids"/>
-                                <button name="gender"/> -->
-                            </group>
+                            <field name="description" nolabel="1"/>
                         </group>
-                        
+                        <notebook>
+                            <page string="Records">
+                                <field name="record_ids"/>
+                            </page>
+                        </notebook>
                     </div>
                 </sheet>
             </form>
@@ -47,7 +45,6 @@
         <field name="name">Artist</field>
         <field name="res_model">record.artist</field>
         <field name="view_mode">tree,form</field>
-        <!-- <field name="view_type">form</field> -->
         <field name="view_id" ref="artist_model_tree_view"/>
     </record>
 

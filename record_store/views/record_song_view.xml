@@ -10,7 +10,7 @@
             <tree string="Song" editable="bottom">
                 <field name="name"/>
                 <field name="artist_ids"/>
-                <field name="duration"/>
+                <field name="duration" widget="float_time"/>
             </tree>
         </field>
     </record>

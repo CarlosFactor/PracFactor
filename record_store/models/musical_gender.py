@@ -6,5 +6,6 @@ from odoo import fields, models
 class RecordMusicalGenre(models.Model):
     _name = 'record.musical.genre'
     _rec_name = "genre"
+    _description = "Genre"
 
     genre = fields.Char("genre")
