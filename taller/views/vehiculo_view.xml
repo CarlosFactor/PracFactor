@@ -1,0 +1,54 @@
+<odoo>
+    <data>
+        <!-- Vista form -->
+        <record id="vehicle_form_view" model="ir.ui.view">
+            <field name="name">view.vehicle.form</field>
+            <field name="model">taller.vehiculo</field>
+            <field name="arch" type="xml">
+                <form string="Vehiculo Form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="active"/>
+                            <field name="matricula"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Vista tree -->
+        <record id="vehicle_tree_view" model="ir.ui.view">
+            <field name="name">view.vehicle.tree</field>
+            <field name="model">taller.vehiculo</field>
+            <field name="arch" type="xml">
+                <tree string="Vehiculo Tree">
+                    <sheet>
+                        <field name="name"/>
+                        <field name="active"/>
+                        <field name="matricula"/>
+                    </sheet>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action-->
+        <record id="action_vehicle_view" model="ir.actions.act_window">
+            <field name="name">Vehiculos</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">taller.vehiculo</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Ingresa un nuevo vehiculo
+                </p>
+            </field>
+        </record>
+
+
+        <!-- Menus -->
+        
+    </data>
+</odoo>
+
+
