@@ -1,6 +1,6 @@
 # © 2021 FactorLibre - Carlos del Valle <carlos.delvalle@factorlibre.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
-from odoo import fields, models, _                     # Importamos los campos y los modelos 
+from odoo import fields, models, _                    
 
 class RecordArtist(models.Model):                   # Creamos la clase de los artistas 
     _name = 'record.artist'                         # Le damos nombre al ser una clase nueva. El guion del name es para que cambie dentro del modulo el punto
