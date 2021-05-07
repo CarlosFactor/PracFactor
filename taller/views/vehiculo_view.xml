@@ -47,7 +47,17 @@
 
 
         <!-- Menus -->
-        
+        <menuitem 
+        id="menu_taller_root" 
+        name="Taller" 
+        sequence="1"/>
+
+        <menuitem 
+        id="menu_taller" 
+        parent="menu_taller_root"
+        action="action_vehicle_view"
+        name="Vehiculo" 
+        sequence="1"/>
     </data>
 </odoo>
 
