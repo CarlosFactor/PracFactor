@@ -58,6 +58,7 @@
         action="action_vehicle_view"
         name="Vehiculo" 
         sequence="1"/>
+        
     </data>
 </odoo>
 
