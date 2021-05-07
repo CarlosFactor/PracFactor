@@ -1,6 +1,6 @@
 # © 2021 FactorLibre - Carlos del Valle <carlos.delvalle@factorlibre.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
-from odoo import api, fields, models, _                     # Importamos los campos y los modelos 
+from odoo import api, fields, models, _                     
 
 
 # Creamos la clase Cancion 
