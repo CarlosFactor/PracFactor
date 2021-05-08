@@ -23,11 +23,9 @@
             <field name="model">taller.vehiculo</field>
             <field name="arch" type="xml">
                 <tree string="Vehiculo Tree">
-                    <sheet>
-                        <field name="name"/>
-                        <field name="active"/>
-                        <field name="matricula"/>
-                    </sheet>
+                    <field name="name"/>
+                    <field name="active"/>
+                    <field name="matricula"/>
                 </tree>
             </field>
         </record>
