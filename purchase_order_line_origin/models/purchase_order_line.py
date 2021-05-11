@@ -8,3 +8,15 @@ class PurchaseOrderLine(models.Model):
     _inherit = 'purchase.order.line'
 
     origin = fields.Char(string="Origin")
+
+
+class PurchaseOrder(models.Model):
+    _inherit = 'purchase.order'
+
+    vendor_type = fields.Selection(
+        string="Vendor Type",
+        selection=[
+            ('type', 'Type1'),
+            ('type2', 'Type2'),
+        ]
+    )
