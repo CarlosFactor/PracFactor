@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_taller_vehiculo_user,access.taller.vehiculo.user,model_taller_vehiculo,base.group_user,1,1,1,1
+access_taller_vehiculo_all,access.taller.vehiculo.all,model_taller_vehiculo,base.group_user,1,0,0,0
+access_taller_vehiculo_managers,access.taller.vehiculo.managers,model_taller_vehiculo,base.group_erp_manager,1,1,1,1

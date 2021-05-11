@@ -11,3 +11,4 @@ class Vehiculo(models.Model):
     name = fields.Char(string="Name",help="Introduce el nombre",size=20,default="Nuevo")
     active = fields.Boolean(string="Active")
     matricula = fields.Char(string="Placa")
+

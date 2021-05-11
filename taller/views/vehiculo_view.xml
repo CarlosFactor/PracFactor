@@ -8,8 +8,8 @@
                 <form string="Vehiculo Form">
                     <sheet>
                         <group>
+                            <field name="active" widget="boolean_toggle"/>
                             <field name="name"/>
-                            <field name="active"/>
                             <field name="matricula"/>
                         </group>
                     </sheet>
