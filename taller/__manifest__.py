@@ -10,8 +10,10 @@
     "application": False,
     "installable": True,
     'data': [
+        "data/data.xml",
         'security/ir.model.access.csv',
         "views/vehiculo_view.xml",
+        "views/orden_reparacion_view.xml",
     ],
     'category': 'Gestion Vehiculo',
 }
